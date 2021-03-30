@@ -7,7 +7,8 @@ bot = commands.Bot(command_prefix = '+', description = '')
 @bot.event
 async def on_ready():
 	print('Pret !\n')
-	print("-----------")
+        await bot.change_presence(activity=discord.Game(name="SPARTACUBE.FR"))
+        print("-----------")
 
 @bot.event
 async def on_message(message):
